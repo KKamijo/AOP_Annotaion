@@ -19,7 +19,7 @@ public class TestAroundAspect {
                 + proceedingJoinPoint.getSignature().getDeclaringTypeName());
         Class<?> clazz = Class.forName(proceedingJoinPoint.getSignature()
                 .getDeclaringTypeName());
-        for (Method method : clazz.getMethods()) {
+        for (Method method : clazz.getDeclaredMethods()) {
             TestAnnotation annotation = method
                     .getAnnotation(TestAnnotation.class);
             if (annotation == null)
