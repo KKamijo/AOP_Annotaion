@@ -1,9 +1,7 @@
 package com.study.spring.annotation;
 
 public enum Type {
-    OLD("Old"),
-    NEW("New"),
-    NOMAL("Normal");
+    OLD("Old"), NEW("New"), NOMAL("Normal");
 
     private String label;
 
